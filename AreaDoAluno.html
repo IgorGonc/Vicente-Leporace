@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Escola Vicente Leporace</title>
+        <meta charset="utf-8" />
+        <link rel="icon" type="imagem/png" href="./images/icone.png" />
+		<link rel = "shortcut icon" type = "imagem/x-icon" href = "/images/icone.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/botao_estilo.css" />
+		<link rel="stylesheet" href="assets/css/skills.css" /> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo">Escola <span>Vicente Leporace</span></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Início</a></li>
+					<li><a href="escola.html">A Escola</a></li>
+					<li><a href="sobre.html">Sobre Nós</a></li>
+					<li><a href="atualizacoes.html">Notícias</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>ir para sala</p>
+						<h2></h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+		<iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__RgPsvlUNkRNRTc3ODREMUgwTzdQV1cxWVFPWFI0OS4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/VicenteLeporaceOficial/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/vicenteleporace/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Vicente Leporace. Todos os direitos reservados.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+  <script>
+      $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+          duration: 1000,
+          step: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      });
+	</script> 
+	
+	</body>
+</html>

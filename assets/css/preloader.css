@@ -1,0 +1,90 @@
+body {
+  overflow: hidden; 
+}
+ 
+/* ini: Preloader */
+ 
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #f5f7f6; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.loading{
+  background-color: #F8F8F8AD;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #bdb5aa;
+  position: relative;
+  animation: a1 2s linear infinite;
+}
+
+.loading::before,.loading::after{
+  content: '';
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.loading::before{
+  border-top: 10px solid #f3d333;
+  transform: rotate(120deg);
+}
+
+.loading::after{
+  border-top: 10px solid #e3b61d;
+  transform: rotate(240deg);
+}
+
+.loading span{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+  animation: a2 2s linear infinite;
+}
+
+@keyframes a1 {
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes a2 {
+  to{
+    transform: rotate(-360deg);
+  }
+}
+
+.aluno.loader-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8AD;
+}
+.aluno.loader{
+  left: 50%;
+  top: 30%;
+  z-index: 1000;
+  position: absolute;
+}

@@ -1,0 +1,61 @@
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 30%;
+  
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+  }
+
+  .gotopbtn.dark {
+      background: #f1f1f1;
+      color: #000;
+  }
+
+  .gotopbtn:hover {
+      opacity: 80%;
+  }
+
+  .gotopbtn i {
+      transition: 1s;
+  }
+
+  .gotopbtn i:hover {
+      opacity: 70%;
+  }
+
+  .news-title h2 {
+    color: #000;
+    transition: 1s;
+}
+
+.news-title h2.dark {
+    color: #FFF;
+}
+
+.saibaMais i {
+    color: #6A5ACD;
+}
+
+.saibaMais i.dark {
+    color: #DCDCDC;
+}
+
+.saibaMais a {
+    color: #483D8B;
+    margin: 3px;
+    font-size: 16px;
+}
+
+.saibaMais a.dark {
+    color: #DCDCDC;
+    margin: 3px;
+    font-size: 16px;
+}

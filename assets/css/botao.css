@@ -1,0 +1,41 @@
+.botaopay {
+    transition: 0.2s;
+}
+
+.botaopay:hover {
+    opacity: 70%;
+}
+
+.botaowhatsapp {
+    float: right;
+    border-radius: 50%;
+    transition: 1s;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.botaowhatsapp:hover {
+    opacity: 70%;
+}
+
+.cronograma {
+    width: 70%;
+}
+
+@media screen and (max-width:960px) {
+    .cronograma {
+        width: 70%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .cronograma {
+        width: 80%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .cronograma {
+        width: 100%;
+    }
+  }
